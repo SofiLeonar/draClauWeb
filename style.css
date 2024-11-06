@@ -63,7 +63,7 @@ nav ul li a {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px;
     border-radius: 8px;
 }
 
@@ -239,22 +239,20 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     padding: 20px; 
     border: 2px solid #FFF9BC;
     background-color: #FFF9BC;
     color: #063150;
     border-radius: 10px;
     font-family: Raleway;
-
+    margin-bottom: 20px;
 }
 
 label {
@@ -290,6 +288,49 @@ button {
 button:hover {
     background-color: #063150;
     color: white;
+}
+
+/* ------------------------------ PREGUNTAS FRECUENTES ----------------------------*/
+
+#preguntasfrecuentes {
+    background-color: #FFF9BC;
+    padding: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#Preguntasfrecuentes h2 {
+    color: #70889E;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preguntas {
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+details {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary:hover {
+    color: #70889E;
+}
+
+details p {
+    margin-top: 10px;
 }
 
 
