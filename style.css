@@ -32,7 +32,9 @@ header {
     top: 0;
     z-index: 1000; 
 }
-
+.menu-icon {
+    display: none;
+}
 .logo {
     margin-left: 5%;
 }
@@ -223,6 +225,72 @@ nav ul li a {
 }
 
 /* ------------------------------ CONTACTO ----------------------------*/
+.contacto{
+    background-color: #063150;
+    color: white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-position: center;
+    color: #fff;
+}
+
+.formularioContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px; 
+    border: 2px solid #FFF9BC;
+    background-color: #FFF9BC;
+    color: #063150;
+    border-radius: 10px;
+    font-family: Raleway;
+
+}
+
+label {
+    margin: 5px 0 0px;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    font-family: Raleway;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    background-color: #F73081;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #063150;
+    color: white;
+}
 
 
 @media (max-width: 480px){

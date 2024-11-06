@@ -119,6 +119,36 @@
         </div>
 
     </section>
+    <section id="contacto"></section>
+    <section class="contacto">
+        <div class="container">
+            <h1 class="rosa">Contacto</h1>
+            <p>¿Necesitas más información?<br>Llena el formulario a continuación y estaré respondiendo via mail.</p>
+        </div>
+
+        <div class="formularioContacto container">
+            <form id="contactForm">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="Asunto">Asunto</label>
+                <input id="asunto" name="asunto" placeholder="Asunto"></input required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea required>
+
+                <button type="submit">Enviar</button>
+                <div id="respuesta"></div> 
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
 
