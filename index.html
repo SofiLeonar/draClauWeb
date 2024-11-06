@@ -227,6 +227,21 @@
         </div>
     </section>
     
+    <footer>
+        <p>También podes comunicarte por los siguiente medios</p>
+        <div class="footer-contacto">
+            <a href="mailto:dra.claudiaholz@gmail.com">
+                <img src="/img/mail.png" alt="Email"> dra.claudiaholz@gmail.com
+            </a>
+            <a href="https://www.instagram.com/claudia.h.abogada/" target="_blank">
+                <img src="/img/insta.png" alt="Instagram"> @claudia.h.abogada
+            </a>
+            <a href="https://wa.me/34123456789?text=Hola,%20estoy%20interesado%20en%20reservar%20un%20turno" target="_blank">
+                <img src="/img/wpp.png" alt="Teléfono"> Enviar mensaje por WhatsApp
+            </a>
+        </div>
+        <a href="https://www.sofialeonardelli.com" class="copy">Copyright &copy; 2024 Sofia Leonardelli</p>
+    </footer>
 
 </body>
 </html>
@@ -251,5 +266,28 @@ function checkScroll() {
 window.addEventListener('scroll', checkScroll);
 
 document.addEventListener('DOMContentLoaded', checkScroll);
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var formData = new FormData(this);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/enviar.php', true);
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    document.getElementById('respuesta').innerHTML = xhr.responseText;
+
+                    if (xhr.responseText.includes("Mensaje enviado correctamente.")) {
+                        document.getElementById('contactForm').reset();
+                    }
+                } else {
+                    document.getElementById('respuesta').innerHTML = 'Ocurrió un error al enviar el mensaje.';
+                }
+            };
+
+            xhr.send(formData);
+        });
 
 </script>
