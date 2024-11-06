@@ -139,7 +139,7 @@ nav ul li a {
     gap: 1em;
     margin-top: 2em;
     max-width: 1000px;
-    margin: 2em auto;
+    margin: 0 auto;
 }
 
 /* ------------------------------ VALORES ----------------------------*/
@@ -155,7 +155,6 @@ nav ul li a {
     padding: 1.5em;
     width: 30%;
     min-width: 280px;
-    transition: transform 0.3s ease;
     align-content: center;
 }
 
@@ -174,7 +173,6 @@ nav ul li a {
     justify-content: center;
     gap: 1em;
     margin-top: 2em;
-    margin: 2em auto;
 }
 .servicios div{
     border: 2px solid #F73081;
@@ -185,18 +183,55 @@ nav ul li a {
     align-items: center;
     align-content: center;
 }
-
-/* ------------------------------ VALORES ----------------------------*/
-.comtacto{
-    background-color: #70889E;
-    justify-content: center;
-    color: white;
-    
+.valor img {
+    display: block; /* Para que tome toda la línea */
+    margin: 0 auto 1em auto; /* Centra horizontalmente la imagen y agrega un margen inferior */
 }
 
+/* ------------------------------ CONTACTO / TURNOS ----------------------------*/
+.contacto{
+    background-color: #70889E;
+    color: white;
+    padding: 50px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-position: center;
+    color: #fff;
+}
+
+.contacto div{
+    max-width: 800px;
+}
+
+/* ------------------------------ MAPA ----------------------------*/
+
+.mapa{
+    background-image: url(img/mapa.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+    gap: 1em;
+}
+.contenidoMapa{
+    text-align: center;
+    max-width: 800px;
+
+}
 @media (max-width: 480px){
-    .contenidoSobremi, .nav {
+    .contenidoSobremi, .nav{
         flex-direction: column;
+        display: block;
+    }
+    .mapa{
+        padding: 25px;
+    }
+    .mapita{
+        width: 250px;
+        height: 120px;
     }
 
 }
