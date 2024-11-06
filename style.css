@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FFFCE0;
+    line-height: 1.6;
+}
+
+h1,h2{
+    font-family: Bona Nova SC;
+}
+h1{
+    font-size: 54px;
+}
+p{
+    font-family: Raleway;
+}
+
+header {
+    background-color: #063150;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 60px;
+}
+
+nav ul li {
+    margin-left: 20px;
+    font-family: Bona Nova;
+}
+
+nav ul li a:hover {
+    color: #F73081;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.inicio{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-image: url('img/inicio.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.resaltado{
+    color: #F73081;
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #F73081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+.flex{
+    display: flex;
+}
+
+/* ------------------------------ VALORES ----------------------------*/
+
+#sobremi{
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    flex-direction: column;
+    padding: 50px;
+    text-align: justify;
+}
+.contenidoSobremi {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+#sobremi img{
+    border-radius: 35px;
+    margin-right: 30px;
+
+}
+#sobremi h1, .sobremi h2{
+    border: #F73081;
+    font-size: 35px !important;
+}
+#sobremi h2{
+    font-size: 20px !important;
+}
+
+.rosa{
+    color: #F73081;
+}
+
+.seccionValores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+    margin-top: 2em;
+    max-width: 1000px;
+    margin: 2em auto;
+}
+
+/* ------------------------------ VALORES ----------------------------*/
+.postic{
+    background-color: #FFF9BC;
+    border: 2px solid #f7d29a;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.valor {
+
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 30%;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+    align-content: center;
+}
+
+.valor:hover {
+    transform: scale(1.05);
+}
+
+.servicios{
+    background-image: url(img/servicios.jpg);
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+    margin: 2em auto;
+}
+.servicios div{
+    border: 2px solid #F73081;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    max-width: 284px;
+    margin-right: 30px;
+    align-items: center;
+    align-content: center;
+}
+
+/* ------------------------------ VALORES ----------------------------*/
+.comtacto{
+    background-color: #70889E;
+    justify-content: center;
+    color: white;
+    
+}
+
+@media (max-width: 480px){
+    .contenidoSobremi, .nav {
+        flex-direction: column;
+    }
+
+}
