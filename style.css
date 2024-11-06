@@ -375,7 +375,7 @@ footer p {
 }
 
 
-@media (max-width: 500px){
+@media (min-width: 481px){
     .contenidoSobremi, .nav{
         flex-direction: column;
         display: block;
@@ -389,7 +389,7 @@ footer p {
     }
 
 }
-@media (max-width: 768px) {
+@media (min-width: 769px) {
     nav ul {
         display: none;
         flex-direction: column;
