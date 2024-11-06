@@ -162,7 +162,7 @@ nav ul li a {
     transform: scale(1.05);
 }
 
-.servicios{
+#servicios{
     background-image: url(img/servicios.jpg);
     padding: 100px 20px;
     background-size: cover;
@@ -174,7 +174,7 @@ nav ul li a {
     gap: 1em;
     margin-top: 2em;
 }
-.servicios div{
+#servicios div{
     border: 2px solid #F73081;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
@@ -184,12 +184,12 @@ nav ul li a {
     align-content: center;
 }
 .valor img {
-    display: block; /* Para que tome toda la línea */
-    margin: 0 auto 1em auto; /* Centra horizontalmente la imagen y agrega un margen inferior */
+    display: block;
+    margin: 0 auto 1em auto;
 }
 
-/* ------------------------------ CONTACTO / TURNOS ----------------------------*/
-.contacto{
+/* ------------------------------ TURNOS ----------------------------*/
+#Turnos{
     background-color: #70889E;
     color: white;
     padding: 50px;
@@ -200,7 +200,7 @@ nav ul li a {
     color: #fff;
 }
 
-.contacto div{
+#Turnos div{
     max-width: 800px;
 }
 
@@ -221,6 +221,10 @@ nav ul li a {
     max-width: 800px;
 
 }
+
+/* ------------------------------ CONTACTO ----------------------------*/
+
+
 @media (max-width: 480px){
     .contenidoSobremi, .nav{
         flex-direction: column;
@@ -234,4 +238,30 @@ nav ul li a {
         height: 120px;
     }
 
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color:#70889E;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        right: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        margin-right: 0;
+        color:#F73081;
+    }
+
+    .menu-icon.active + nav ul {
+        display: flex;
+    }
 }

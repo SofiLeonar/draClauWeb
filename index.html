@@ -21,6 +21,7 @@
                 <img src="img/logoNav.png" alt="Logo" width="80px">
             </a>
         </div>
+        <div class="menu-icon">&#9776;</div> 
         <nav>
             <ul>
                 <li><a href="#sobremi">Sobre mi</a></li>
@@ -68,7 +69,7 @@
         </div>
     </section>
 
-    <section class="servicios">        
+    <section id="servicios">        
             <div class="valor">
                 <img src="img/civil.png" alt="Manitos" width="112px">
                 <h4 class="rosa">Civil, Comercial y Laboral</h4>
@@ -99,10 +100,10 @@
             </div>
     </section>
 
-    <section class="contacto">
+    <section id="Turnos">
         <div class="container">
             <h2>Agendá tu cita para ofrecerte una atención personalizada.</h2>
-            <h3>Las citas pueden ser presenciales en el estudio o virtuales mediante "Google Meet"</h3>
+            <p>Las citas pueden ser presenciales en el estudio o virtuales mediante "Google Meet"</p>
         </div>
     </section>
 
@@ -120,3 +121,9 @@
     </section>
 </body>
 </html>
+
+<script>
+    document.querySelector(".menu-icon").addEventListener("click", function() {
+    this.classList.toggle("active");
+});
+</script>
