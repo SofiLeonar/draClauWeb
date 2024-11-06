@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.seccion {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+  .seccion.visible {
+    opacity: 1;
+}
+  
 html {
     scroll-behavior: smooth;
 }
@@ -191,7 +198,7 @@ nav ul li a {
 }
 
 /* ------------------------------ TURNOS ----------------------------*/
-#Turnos{
+#turnos{
     background-color: #70889E;
     color: white;
     padding: 50px;
@@ -200,10 +207,6 @@ nav ul li a {
     text-align: center;
     background-position: center;
     color: #fff;
-}
-
-#Turnos div{
-    max-width: 800px;
 }
 
 /* ------------------------------ MAPA ----------------------------*/
@@ -292,14 +295,9 @@ button:hover {
 
 /* ------------------------------ PREGUNTAS FRECUENTES ----------------------------*/
 
-#preguntasfrecuentes {
-    background-color: #FFF9BC;
-    padding: 50px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
 
-#Preguntasfrecuentes h2 {
+
+#preguntasfrecuentes h2 {
     color: #70889E;
     font-size: 2rem;
     font-weight: bold;

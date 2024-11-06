@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $asunto = htmlspecialchars($_POST['asunto']);
     $mensaje = htmlspecialchars($_POST['mensaje']);
     
-    $destinatario = "sleonaholz@gmail.com";
+    $destinatario = "dra.claudiaholz@gmail.com";
     $asuntoCorreo = $asunto;
 
     $cuerpo = "Has recibido un nuevo mensaje de contacto:\n\n";

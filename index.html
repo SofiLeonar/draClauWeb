@@ -41,7 +41,7 @@
         <a href="#contacto" class="boton">Contacto</a>
     </section>
 
-    <section id="sobremi">
+    <section id="sobremi" class="seccion">
         <div class="contenidoSobremi">
             <img src="img/sobremi.JPG" alt="foto sobremi" width="241px">
             <div class="textoPresentacion">
@@ -53,7 +53,7 @@
         </div>
     </section>
     <section>
-        <div class="seccionValores">
+        <div class="seccionValores seccion">
             <div class="valor postic">
                 <h4 class="rosa">Mi objetivo principal</h4>
                 <p>Ofrecer soluciones legales efectivas y acompañar a cada cliente en la resolución de sus conflictos, ya sea en el ámbito judicial o extrajudicial.</p>
@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <section id="servicios">        
+    <section id="servicios" class="seccion">        
             <div class="valor">
                 <img src="img/civil.png" alt="Manitos" width="112px">
                 <h4 class="rosa">Civil, Comercial y Laboral</h4>
@@ -100,14 +100,18 @@
             </div>
     </section>
 
-    <section id="Turnos">
+    <section id="turnos" class="seccion">
         <div class="container">
             <h2>Agendá tu cita para ofrecerte una atención personalizada.</h2>
             <p>Las citas pueden ser presenciales en el estudio o virtuales mediante "Google Meet"</p>
         </div>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/dra-claudiaholz/30min?background_color=fffde9&primary_color=f73081" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
     </section>
 
-    <section class="mapa">
+    <section class="mapa seccion">
         <div class="contenidoSobremi contenidoMapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.445663516976!2d-57.96759822463161!3d-30.621395274638196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ad15748f1ad7b7%3A0xad5429c0ce301205!2sEstudio%20Jur%C3%ADdico%20Claudia%20Holzweissig!5e0!3m2!1ses-419!2sar!4v1730918055727!5m2!1ses-419!2sar" width="410" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapita"></iframe>
             <div>
@@ -120,13 +124,13 @@
 
     </section>
     <section id="contacto"></section>
-    <section class="contacto">
+    <section class="contacto seccion">
         <div class="container">
             <h1 class="rosa">Contacto</h1>
             <p>¿Necesitas más información?<br>Llena el formulario a continuación y estaré respondiendo via mail.</p>
         </div>
 
-        <div class="formularioContacto container">
+        <div class="formularioContacto container seccion">
             <form id="contactForm">
                 <label for="nombre">Nombre y apellido</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
@@ -149,7 +153,7 @@
         </div>
     </section>
     
-    <section id="Preguntasfrecuentes" class="container">
+    <section id="preguntasfrecuentes" class="container seccion">
         <h2 class="rosa">Preguntas Frecuentes</h2>
         
         <div class="preguntas">
@@ -231,4 +235,21 @@
     document.querySelector(".menu-icon").addEventListener("click", function() {
     this.classList.toggle("active");
 });
+
+function checkScroll() {
+  const secciones = document.querySelectorAll('.seccion');
+  secciones.forEach(seccion => {
+    const rect = seccion.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      seccion.classList.add('visible');
+    } else {
+      seccion.classList.remove('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', checkScroll);
+
+document.addEventListener('DOMContentLoaded', checkScroll);
+
 </script>
